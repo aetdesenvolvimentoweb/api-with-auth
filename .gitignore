@@ -4,4 +4,6 @@ coverage/
 .vercel/
 
 .env
+.env.development
+.env.test
 pnpm-lock.yaml
