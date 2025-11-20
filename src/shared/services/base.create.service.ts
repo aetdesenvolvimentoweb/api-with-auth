@@ -1,7 +1,9 @@
+import { BaseSanitizerProtocol } from "src/shared/sanitizers/protocols";
 import { BaseCreateUsecase } from "src/shared/usecases";
 
 export interface BaseCreateServiceDependencies<InputType> {
   repository: BaseCreateUsecase<InputType>;
+  sanitizer: BaseSanitizerProtocol<InputType>;
 }
 
 export abstract class BaseCreateService<InputType>
@@ -12,6 +14,7 @@ export abstract class BaseCreateService<InputType>
   ) {}
 
   create = async (data: InputType): Promise<void> => {
-    await this.dependencies.repository.create(data);
+    const sanitizedData = this.dependencies.sanitizer.sanitize(data);
+    await this.dependencies.repository.create(sanitizedData);
   };
 }

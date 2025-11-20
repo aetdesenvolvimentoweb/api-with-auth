@@ -1,4 +1,4 @@
-import { StringSanitizerProtocol } from "./string.sanitizer.protocol";
+import { StringSanitizerProtocol } from "./protocols/string.sanitizer.protocol";
 
 export class NameSanitizer implements StringSanitizerProtocol {
   sanitize(value: string): string {
