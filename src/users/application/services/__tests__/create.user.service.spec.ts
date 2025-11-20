@@ -11,7 +11,7 @@ describe("CreateUserService", () => {
       name: "John Doe",
       email: "john@example.com",
       password: "secure123",
-      phone: "11999999999",
+      phone: 11999999999,
       birthDate: new Date("1990-01-01"),
     };
 
