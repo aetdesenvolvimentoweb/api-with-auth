@@ -1,17 +1,8 @@
-import { BaseCreateUsecase } from "src/shared/usecases";
-import { InputUserDTO, UserRepository } from "src/users/domain";
+import { BaseCreateService } from "../../../shared/services";
+import { InputUserDTO, UserRepository } from "../../../users/domain";
 
-interface CreateUserServiceDependencies {
-  userRepository: UserRepository;
-  // Add other dependencies if needed
-}
-
-export class CreateUserService implements BaseCreateUsecase<InputUserDTO> {
-  constructor(private readonly dependencies: CreateUserServiceDependencies) {}
-
-  create = async (data: InputUserDTO): Promise<void> => {
-    // sanitize data
-    // validate data
-    this.dependencies.userRepository.create(data);
-  };
+export class CreateUserService extends BaseCreateService<InputUserDTO> {
+  constructor(userRepository: UserRepository) {
+    super({ repository: userRepository });
+  }
 }

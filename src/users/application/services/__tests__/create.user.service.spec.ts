@@ -6,7 +6,7 @@ import { CreateUserService } from "../create.user.service";
 describe("CreateUserService", () => {
   it("should call userRepository.create with correct data", async () => {
     const userRepositoryMock = createUserRepositoryMock();
-    const sut = new CreateUserService({ userRepository: userRepositoryMock });
+    const sut = new CreateUserService(userRepositoryMock);
     const inputData: InputUserDTO = {
       name: "John Doe",
       email: "john@example.com",
