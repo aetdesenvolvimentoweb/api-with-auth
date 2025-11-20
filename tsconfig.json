@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "baseUrl": "."
   },
-  "include": ["./src", "./__tests__"],
+  "include": ["./src", "./__mocks__"],
   "exclude": ["node_modules", "dist"]
 }
