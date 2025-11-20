@@ -3,7 +3,6 @@ import {
   NameSanitizer,
   PasswordSanitizer,
 } from "../../shared/sanitizers";
-
 import { InputUserDTO } from "../domain";
 import { InputUserDTOSanitizerProtocol } from "./protocols/input.user.dto.sanitizer.protocol";
 
