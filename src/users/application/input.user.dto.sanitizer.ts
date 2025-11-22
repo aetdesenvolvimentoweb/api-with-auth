@@ -3,8 +3,8 @@ import {
   NameSanitizer,
   PasswordSanitizer,
 } from "../../shared/application/sanitizers";
-import { InputUserDTO } from "../domain";
-import { InputUserDTOSanitizerProtocol } from "./protocols/input.user.dto.sanitizer.protocol";
+import { InputUserDTO } from "../application/dtos";
+import { InputUserDTOSanitizerProtocol } from "../domain/protocols";
 
 export class InputUserDTOSanitizer implements InputUserDTOSanitizerProtocol {
   sanitize(input: InputUserDTO): InputUserDTO {

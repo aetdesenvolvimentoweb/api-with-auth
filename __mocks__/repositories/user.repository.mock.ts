@@ -1,4 +1,4 @@
-import { UserRepository } from "src/users/domain";
+import { UserRepository } from "src/users/domain/protocols";
 
 export const createUserRepositoryMock = (): jest.Mocked<UserRepository> => ({
   create: jest.fn(),

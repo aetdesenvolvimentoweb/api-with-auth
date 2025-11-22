@@ -1,4 +1,4 @@
-import { InputUserDTO } from "src/users/domain";
+import { InputUserDTO } from "src/users/application/dtos";
 
 import { createUserRepositoryMock } from "../../../../../__mocks__";
 import { CreateUserService } from "../create.user.service";

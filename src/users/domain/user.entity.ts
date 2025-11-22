@@ -1,3 +1,5 @@
+import { UserRole } from "./user-role.enum";
+
 export type User = {
   id: string;
   name: string;
@@ -5,7 +7,7 @@ export type User = {
   phone: number;
   birthDate: Date;
   passwordHash: string;
-  role: "Administrador" | "Colaborador" | "Usuário";
+  role: UserRole;
   isActive: boolean;
   createdAt: Date;
 };
