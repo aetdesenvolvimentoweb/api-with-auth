@@ -1,5 +1,5 @@
-import { BaseSanitizerProtocol } from "src/shared/sanitizers/protocols";
-import { BaseCreateUsecase } from "src/shared/usecases";
+import { BaseSanitizerProtocol } from "src/shared/application/sanitizers/protocols";
+import { BaseCreateUsecase } from "src/shared/domain/usecases";
 
 export interface BaseCreateServiceDependencies<InputType> {
   repository: BaseCreateUsecase<InputType>;

@@ -1,4 +1,4 @@
-import { BaseCreateService } from "../../../shared/services";
+import { BaseCreateService } from "../../../shared/application/services";
 import { InputUserDTO, UserRepository } from "../../../users/domain";
 import { InputUserDTOSanitizer } from "../input.user.dto.sanitizer";
 

@@ -1,4 +1,4 @@
-import { BaseSanitizerProtocol } from "src/shared/sanitizers/protocols";
+import { BaseSanitizerProtocol } from "src/shared/application/sanitizers/protocols";
 import { InputUserDTO } from "src/users/domain";
 
 export interface InputUserDTOSanitizerProtocol

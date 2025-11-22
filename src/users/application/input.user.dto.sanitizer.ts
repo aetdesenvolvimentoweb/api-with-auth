@@ -2,7 +2,7 @@ import {
   EmailSanitizer,
   NameSanitizer,
   PasswordSanitizer,
-} from "../../shared/sanitizers";
+} from "../../shared/application/sanitizers";
 import { InputUserDTO } from "../domain";
 import { InputUserDTOSanitizerProtocol } from "./protocols/input.user.dto.sanitizer.protocol";
 

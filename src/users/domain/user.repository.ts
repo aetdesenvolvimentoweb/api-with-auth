@@ -4,7 +4,7 @@ import {
   BaseFindByIdUsecase,
   BaseGetAllUsecase,
   BaseUpdateUsecase,
-} from "src/shared/usecases";
+} from "src/shared/domain/usecases";
 
 import { InputUserDTO, OutputUserDTO } from "./dtos";
 
